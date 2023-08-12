@@ -17,7 +17,7 @@ export const adminLogin =(uid,password) => async (dispatch) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/loginAdmin',
+            'https://banking.enthouse.in/api/v1/admin/loginAdmin',
             {uid,password},
             config
         )
@@ -68,7 +68,7 @@ export const employeeLogin =(uid,password) => async (dispatch) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/employee/loginEmployee',
+            'https://banking.enthouse.in/api/v1/employee/loginEmployee',
             {uid,password},
             config
         )

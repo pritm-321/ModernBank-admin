@@ -19,7 +19,7 @@ export const getCustomerList = () => async (dispatch , getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getAllCustomers',{},
+            'https://banking.enthouse.in/api/v1/admin/getAllCustomers',{},
             config
         )
 
@@ -60,7 +60,7 @@ export const getAccountDetails = (id) => async (dispatch, getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getAccountByAid',
+            'https://banking.enthouse.in/api/v1/admin/getAccountByAid',
             {
                 "aid": id
             },
@@ -104,7 +104,7 @@ export const getTransactionDetails = (id) => async (dispatch, getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getTransactionByTid',
+            'https://banking.enthouse.in/api/v1/admin/getTransactionByTid',
             {
                 "tid": id
             },
@@ -148,7 +148,7 @@ export const getPendingTransactionDetails = (id) => async (dispatch, getState) =
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getPendingTransactionByTid',
+            'https://banking.enthouse.in/api/v1/admin/getPendingTransactionByTid',
             {tid : id},
             config
         )

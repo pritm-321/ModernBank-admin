@@ -20,7 +20,7 @@ export const registerEmployee = (password, firstName , middleName , lastName , p
         //console.log(password, firstName , middleName , lastName , phone , email, aadharNo, streetName , city , state ,pinCode);
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/registerEmployee',
+            'https://banking.enthouse.in/api/v1/admin/registerEmployee',
             {
                 "password": password,
                 "firstName": firstName,
@@ -81,7 +81,7 @@ export const getEmployeeDetails = (id) => async (dispatch , getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/employee/GetEmployeeByUid',
+            'https://banking.enthouse.in/api/v1/employee/GetEmployeeByUid',
             {
                 "uid": id
             },

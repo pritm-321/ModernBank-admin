@@ -18,7 +18,7 @@ export const fetchEmployeeList = () => async (dispatch, getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getAllEmployees',{},
+            'https://banking.enthouse.in/api/v1/admin/getAllEmployees',{},
             config
         )
 
@@ -53,7 +53,7 @@ export const getAccountList = () => async (dispatch, getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/getAllAccounts',{},
+            'https://banking.enthouse.in/api/v1/admin/getAllAccounts',{},
             config
         )
 
@@ -88,7 +88,7 @@ export const addAccountType = (name , rate) => async (dispatch, getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/addAccountType',
+            'https://banking.enthouse.in/api/v1/admin/addAccountType',
             {
                 "name": name,
                 "rate": rate
@@ -137,7 +137,7 @@ export const getAdminDetails = (id) => async (dispatch , getState) => {
         }
 
         const {data} =await axios.post(
-            'https://banking-backend-zynj.onrender.com/api/v1/admin/GetAdminByUid',
+            'https://banking.enthouse.in/api/v1/admin/GetAdminByUid',
             {
                 "uid": id
             },
